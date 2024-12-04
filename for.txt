@@ -1,0 +1,74 @@
+[
+    For(
+        StmtFor {
+            range: 0..29,
+            target: Name(
+                ExprName {
+                    range: 4..5,
+                    id: Identifier(
+                        "i",
+                    ),
+                    ctx: Store,
+                },
+            ),
+            iter: Call(
+                ExprCall {
+                    range: 9..17,
+                    func: Name(
+                        ExprName {
+                            range: 9..14,
+                            id: Identifier(
+                                "range",
+                            ),
+                            ctx: Load,
+                        },
+                    ),
+                    args: [
+                        Constant(
+                            ExprConstant {
+                                range: 15..16,
+                                value: Int(
+                                    2,
+                                ),
+                                kind: None,
+                            },
+                        ),
+                    ],
+                    keywords: [],
+                },
+            ),
+            body: [
+                AugAssign(
+                    StmtAugAssign {
+                        range: 23..29,
+                        target: Name(
+                            ExprName {
+                                range: 23..24,
+                                id: Identifier(
+                                    "a",
+                                ),
+                                ctx: Store,
+                            },
+                        ),
+                        op: Add,
+                        value: Constant(
+                            ExprConstant {
+                                range: 28..29,
+                                value: Int(
+                                    1,
+                                ),
+                                kind: None,
+                            },
+                        ),
+                    },
+                ),
+            ],
+            orelse: [],
+            type_comment: None,
+        },
+    ),
+]
+digraph {
+    0 [ label = "entry" ]
+}
+

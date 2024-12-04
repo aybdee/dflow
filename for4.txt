@@ -1,0 +1,91 @@
+[
+    For(
+        StmtFor {
+            range: 0..42,
+            target: Tuple(
+                ExprTuple {
+                    range: 4..11,
+                    elts: [
+                        Name(
+                            ExprName {
+                                range: 4..7,
+                                id: Identifier(
+                                    "one",
+                                ),
+                                ctx: Store,
+                            },
+                        ),
+                        Name(
+                            ExprName {
+                                range: 8..11,
+                                id: Identifier(
+                                    "two",
+                                ),
+                                ctx: Store,
+                            },
+                        ),
+                    ],
+                    ctx: Store,
+                },
+            ),
+            iter: Call(
+                ExprCall {
+                    range: 15..30,
+                    func: Name(
+                        ExprName {
+                            range: 15..24,
+                            id: Identifier(
+                                "enumerate",
+                            ),
+                            ctx: Load,
+                        },
+                    ),
+                    args: [
+                        Name(
+                            ExprName {
+                                range: 25..29,
+                                id: Identifier(
+                                    "item",
+                                ),
+                                ctx: Load,
+                            },
+                        ),
+                    ],
+                    keywords: [],
+                },
+            ),
+            body: [
+                AugAssign(
+                    StmtAugAssign {
+                        range: 36..42,
+                        target: Name(
+                            ExprName {
+                                range: 36..37,
+                                id: Identifier(
+                                    "a",
+                                ),
+                                ctx: Store,
+                            },
+                        ),
+                        op: Add,
+                        value: Constant(
+                            ExprConstant {
+                                range: 41..42,
+                                value: Int(
+                                    1,
+                                ),
+                                kind: None,
+                            },
+                        ),
+                    },
+                ),
+            ],
+            orelse: [],
+            type_comment: None,
+        },
+    ),
+]
+digraph {
+    0 [ label = "entry" ]
+}
+

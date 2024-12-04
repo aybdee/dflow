@@ -1,0 +1,57 @@
+[
+    For(
+        StmtFor {
+            range: 0..25,
+            target: Name(
+                ExprName {
+                    range: 4..5,
+                    id: Identifier(
+                        "i",
+                    ),
+                    ctx: Store,
+                },
+            ),
+            iter: Name(
+                ExprName {
+                    range: 9..13,
+                    id: Identifier(
+                        "item",
+                    ),
+                    ctx: Load,
+                },
+            ),
+            body: [
+                AugAssign(
+                    StmtAugAssign {
+                        range: 19..25,
+                        target: Name(
+                            ExprName {
+                                range: 19..20,
+                                id: Identifier(
+                                    "a",
+                                ),
+                                ctx: Store,
+                            },
+                        ),
+                        op: Add,
+                        value: Constant(
+                            ExprConstant {
+                                range: 24..25,
+                                value: Int(
+                                    1,
+                                ),
+                                kind: None,
+                            },
+                        ),
+                    },
+                ),
+            ],
+            orelse: [],
+            type_comment: None,
+        },
+    ),
+]
+digraph {
+    0 [ label = "entry" ]
+}
+
