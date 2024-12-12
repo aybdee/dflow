@@ -1,4 +1,3 @@
-//=todo= adding final cases to if statements
 use petgraph::dot::{Config, Dot};
 use petgraph::graph::DiGraph;
 use rustpython_parser::ast::Stmt;
